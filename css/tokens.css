@@ -1,0 +1,80 @@
+/* Hallmark · enU.Labs Escape Vol.2 — tokens.css
+ * macrostructure: Marquee Hero (opening/ending) + Vol.1 chat UI inherited
+ * theme: custom · vibe: "midday, fresh-green, observant, friendly"
+ * paper: oklch(97% 0.006 145) · accent: oklch(60% 0.13 145)
+ * display: Bricolage Grotesque · body: Inter Tight
+ * axes: light / geometric-sans / chromatic-green (sage ~145°)
+ * studied: no · context: explicit · genre: playful · v1.0.0
+ */
+
+:root {
+  /* Color tokens (OKLCH · QA fresh-green anchor) */
+  --color-paper: oklch(97% 0.006 145);
+  --color-paper-2: oklch(94% 0.010 145);
+  --color-paper-3: oklch(91% 0.012 145);
+  --color-ink: oklch(20% 0.010 140);
+  --color-ink-2: oklch(42% 0.010 140);
+  --color-rule: oklch(82% 0.012 145);
+  --color-rule-2: oklch(86% 0.010 145);
+  --color-muted: oklch(54% 0.010 140);
+  --color-neutral: oklch(40% 0.010 140);
+  --color-accent: oklch(60% 0.13 145);
+  --color-accent-hover: oklch(54% 0.14 145);
+  --color-accent-ink: oklch(98% 0.006 145);
+  --color-focus: oklch(58% 0.18 145);
+
+  /* Character border colors (chat avatar identity) */
+  --color-qa: oklch(60% 0.13 145);           /* QA: green */
+  --color-uiux: oklch(75% 0.09 80);          /* UIUX: warm soft */
+  --color-system: oklch(54% 0.010 140);      /* system message */
+
+  /* Typography */
+  --font-display: "Bricolage Grotesque", system-ui, sans-serif;
+  --font-body: "Inter Tight", system-ui, sans-serif;
+
+  /* Type scale (4pt-rooted) */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.5rem;
+  --text-display-s: 3.5rem;
+  --text-display: 4.5rem;
+
+  /* Spacing (4pt scale) */
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+
+  /* Radius (playful: 12px card upper bound) */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-pill: 999px;
+
+  /* Easing (3 named, no browser default) */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  /* Duration */
+  --dur-fast: 120ms;
+  --dur-base: 200ms;
+  --dur-slow: 320ms;
+
+  /* Rule (border-width) */
+  --rule-hairline: 1px;
+  --rule-base: 2px;
+
+  /* Shadow (playful: soft, restrained) */
+  --shadow-card: 0 8px 24px -10px oklch(60% 0.13 145 / 0.18);
+  --shadow-card-hover: 0 12px 32px -10px oklch(60% 0.13 145 / 0.24);
+}
